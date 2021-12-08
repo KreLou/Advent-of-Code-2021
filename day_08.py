@@ -25,7 +25,6 @@ class Segment:
             return False
 
         combine = rev_map['9'].replace(self.top_right, '') + self.bottom_left
-        print('Suche 6:', combine, digit)
         if len(combine) == len(digit):
             for d in combine:
                 if d not in digit:
